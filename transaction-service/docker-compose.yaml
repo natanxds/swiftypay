@@ -1,0 +1,11 @@
+version: '3.0'
+services:
+  db:
+    image: postgres:15
+    container_name: swiftypay-db
+    environment:
+        POSTGRES_USER: swiftypay
+        POSTGRES_PASSWORD: secret
+        POSTGRES_DB: swiftypay
+    ports:
+        - "5432:5432"
